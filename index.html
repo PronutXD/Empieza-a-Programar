@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empieza a programar</title>
+  <meta name="description" content="Guía en español para empezar a programar desde cero: fundamentos, ruta de aprendizaje, herramientas y videos.">
+  <script>
+  /* Aplica el tema guardado antes de pintar la página (evita parpadeos) */
+  try { var t = localStorage.getItem('tema'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="asset/favicon.svg  " type="image/svg+xml">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio">&lt;/&gt; Empieza a programar</a>
+    <nav id="menu" aria-label="Secciones">
+      <a href="#pasos">Cómo empezar</a>
+      <a href="#fundamentos">Fundamentos</a>
+      <a href="#ruta">Ruta</a>
+      <a href="#practica">Practica</a>
+      <a href="#herramientas">Herramientas</a>
+    </nav>
+    <div class="bar-btns">
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Cambiar entre tema claro y oscuro" title="Cambiar tema">🌙</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <p class="eyebrow">Guía para principiantes</p>
+    <h1>Aprende a programar <span class="mark">desde cero</span></h1>
+    <p class="lead">Una ruta paso a paso, con videos en español y herramientas que puedes usar desde hoy. No necesitas una computadora especial: yo empecé con el Bloc de Notas de Windows.</p>
+    <a class="btn primary" href="#pasos">Empezar</a>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <!-- 1. CÓMO EMPEZAR -->
+  <section id="pasos">
+    <header class="sec-head">
+      <p class="eyebrow">Paso a paso</p>
+      <h2>Cómo empezar en 4 pasos</h2>
+    </header>
+    <ol class="steps">
+      <li><h3>Elige qué quieres crear</h3><p>¿Juegos, páginas web, apps, robots? Lo que más te guste te mantendrá motivado.</p></li>
+      <li><h3>Aprende a pensar con lógica</h3><p>Antes que cualquier lenguaje, aprende a resolver problemas paso a paso.</p></li>
+      <li><h3>Practica un poco cada día</h3><p>20 o 30 minutos diarios valen más que una tarde entera una vez al mes.</p></li>
+      <li><h3>Haz un proyecto tuyo</h3><p>Algo pequeño: una página sobre tu equipo favorito, un juego sencillo, un LED que parpadea.</p></li>
+    </ol>
+    <p class="note"><b>Si eres menor de edad:</b> avísale a tus papás o a un adulto antes de instalar programas o crear cuentas.</p>
+  </section>
+
+  <!-- 2. FUNDAMENTOS -->
+  <section id="fundamentos">
+    <header class="sec-head">
+      <p class="eyebrow">La base de todo</p>
+      <h2>Lo que necesitas entender primero</h2>
+      <p class="sub">Estas ideas se usan en <b>todos</b> los lenguajes. Si las entiendes, aprender cualquiera será mucho más fácil.</p>
+    </header>
+    <div class="concepts">
+      <article><span class="ic">🧠</span><div><h3>Lógica y algoritmos</h3><p>Un algoritmo son los pasos para resolver un problema, como una receta de cocina.</p></div></article>
+      <article><span class="ic">📦</span><div><h3>Variables</h3><p>Cajas con nombre donde guardas datos: tu edad, tu puntuación, tu nombre.</p></div></article>
+      <article><span class="ic">🔀</span><div><h3>Condiciones</h3><p>"Si pasa esto, haz aquello". Así un programa toma decisiones.</p></div></article>
+      <article><span class="ic">🔁</span><div><h3>Ciclos</h3><p>Repetir una acción muchas veces sin escribirla una por una.</p></div></article>
+      <article><span class="ic">🧩</span><div><h3>Funciones</h3><p>Un grupo de instrucciones con nombre que puedes usar cuando quieras.</p></div></article>
+      <article><span class="ic">🐞</span><div><h3>Depurar errores</h3><p>Equivocarse es normal. Buscar y arreglar errores también es programar.</p></div></article>
+    </div>
+
+    <h3 class="list-title">Videos para aprender los fundamentos</h3>
+    <ul class="videos">
+      <li>
+        <a href="https://www.youtube.com/watch?v=TdITcVD64zI" target="_blank" rel="noopener">
+          <span class="play" aria-hidden="true">▶</span>
+          <span class="vt"><b>Curso completo de lógica de programación desde cero</b><small>MoureDev by Brais Moure · unas 7 h y media (míralo por partes)</small></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=QvmjNtrFiuk" target="_blank" rel="noopener">
+          <span class="play" aria-hidden="true">▶</span>
+          <span class="vt"><b>Cómo aprender a programar desde cero: introducción</b><small>BettaTech · cerca de 3 h</small></span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 3. RUTA DE APRENDIZAJE -->
+  <section id="ruta">
+    <header class="sec-head">
+      <p class="eyebrow">Tu ruta</p>
+      <h2>¿Con qué lenguaje empiezo?</h2>
+      <p class="sub">No hay uno "correcto", pero sí un orden que funciona bien. Avanza al siguiente nivel cuando el anterior ya te resulte cómodo.</p>
+    </header>
+
+    <ol class="path">
+      <li class="level">
+        <div class="lv"><span>Nivel 1</span></div>
+        <div class="lang">
+          <div class="lang-art" aria-hidden="true"><svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg"><rect x="26" y="18" width="112" height="30" rx="9" class="f3"/><rect x="26" y="52" width="112" height="30" rx="9" class="f1"/><rect x="26" y="86" width="112" height="30" rx="9" class="f4"/>
+<rect x="40" y="29" width="54" height="8" rx="4" class="p o"/><rect x="40" y="63" width="70" height="8" rx="4" class="p o"/><rect x="40" y="97" width="44" height="8" rx="4" class="p o"/>
+<rect x="156" y="22" width="64" height="96" rx="12" class="box"/><circle cx="176" cy="96" r="10" class="f5"/>
+<path d="M178 84 C 188 64, 198 66, 202 54" class="dash"/><polygon points="204,34 207,42 215,43 209,49 211,57 204,53 197,57 199,49 193,43 201,42" class="f3"/></svg></div>
+          <div class="lang-body">
+          <div class="lang-top"><h3>Scratch</h3><span class="tag t1">Muy fácil</span></div>
+          <p class="for"><b>Para:</b> hacer juegos y animaciones.</p>
+          <p>Armas el programa uniendo bloques de colores, sin escribir código. Perfecto para aprender la lógica.</p>
+          <div class="actions"><a class="btn primary" href="https://www.youtube.com/playlist?list=PLNMapTxyS1v9Q9ckVzACX40IHRlGtuzSV" target="_blank" rel="noopener">▶ Curso de Scratch · Wonderly, 41 videos</a><a class="btn" href="https://scratch.mit.edu/" target="_blank" rel="noopener">Abrir Scratch</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="level">
+        <div class="lv"><span>Nivel 2</span></div>
+        <div class="lang">
+          <div class="lang-art" aria-hidden="true"><svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="16" width="180" height="108" rx="12" class="box"/>
+<path d="M30 38 V28 A12 12 0 0 1 42 16 H198 A12 12 0 0 1 210 28 V38 Z" class="f1"/>
+<circle cx="46" cy="27" r="3.5" class="p"/><circle cx="58" cy="27" r="3.5" class="p"/><circle cx="70" cy="27" r="3.5" class="p"/>
+<rect x="44" y="50" width="152" height="14" rx="5" class="f3"/><rect x="44" y="72" width="70" height="44" rx="6" class="f2"/>
+<rect x="124" y="72" width="72" height="20" rx="6" class="f4"/><rect x="124" y="96" width="72" height="20" rx="6" class="f5"/></svg></div>
+          <div class="lang-body">
+          <div class="lang-top"><h3>HTML y CSS</h3><span class="tag t2">Fácil</span></div>
+          <p class="for"><b>Para:</b> crear páginas web y ver los resultados al instante.</p>
+          <p>HTML es la estructura de la página y CSS es su diseño. Así empecé yo, con el Bloc de Notas.</p>
+          <div class="actions"><a class="btn primary" href="https://www.youtube.com/watch?v=ELSm-G201Ls" target="_blank" rel="noopener">▶ Curso de HTML y CSS · Soy Dalto</a></div>
+          <p class="hint">Es un curso muy largo: míralo por partes.</p>
+          </div>
+        </div>
+      </li>
+      <li class="level">
+        <div class="lv"><span>Nivel 3</span></div>
+        <div class="lang">
+          <div class="lang-art" aria-hidden="true"><svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg"><rect x="26" y="20" width="150" height="100" rx="12" class="box"/>
+<rect x="42" y="36" width="118" height="12" rx="6" class="t"/><rect x="42" y="56" width="80" height="8" rx="4" class="t"/>
+<rect x="42" y="86" width="58" height="24" rx="12" class="f3"/><rect x="112" y="88" width="44" height="20" rx="10" class="f2"/><circle cx="146" cy="98" r="7" class="p"/>
+<path d="M196 18 L178 46 H192 L186 66 L214 36 H198 Z" class="f3"/>
+<path d="M190 76 L190 116 L199 108 L205 122 L212 119 L206 105 L218 105 Z" class="k"/></svg></div>
+          <div class="lang-body">
+          <div class="lang-top"><h3>JavaScript</h3><span class="tag t3">Medio</span></div>
+          <p class="for"><b>Para:</b> hacer páginas web que reaccionan: botones, juegos, formularios.</p>
+          <p>Es el siguiente paso después de HTML y CSS. Funciona directo en tu navegador.</p>
+          <div class="actions"><a class="btn primary" href="https://www.youtube.com/watch?v=v8Evfd6AFpw" target="_blank" rel="noopener">▶ Curso de JavaScript · freeCodeCamp Español</a></div>
+          <p class="hint">Ojo: <b>Java y JavaScript son lenguajes distintos</b>, aunque se parezcan en el nombre.</p>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <h3 class="list-title">Por tu lado: electrónica y robots</h3>
+    <div class="lang side">
+          <div class="lang-art" aria-hidden="true"><svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg"><rect x="22" y="30" width="130" height="84" rx="10" class="f2"/><rect x="52" y="52" width="40" height="40" rx="4" class="k"/>
+<g class="f3"><rect x="34" y="21" width="6" height="11"/><rect x="48" y="21" width="6" height="11"/><rect x="62" y="21" width="6" height="11"/><rect x="76" y="21" width="6" height="11"/><rect x="90" y="21" width="6" height="11"/><rect x="104" y="21" width="6" height="11"/><rect x="118" y="21" width="6" height="11"/>
+<rect x="34" y="112" width="6" height="11"/><rect x="48" y="112" width="6" height="11"/><rect x="62" y="112" width="6" height="11"/><rect x="76" y="112" width="6" height="11"/><rect x="90" y="112" width="6" height="11"/><rect x="104" y="112" width="6" height="11"/><rect x="118" y="112" width="6" height="11"/></g>
+<path d="M152 72 H160 l5 -8 l7 16 l7 -16 l7 16 l5 -8 H201" class="wire"/><path d="M214 85 V104 H140" class="wire"/>
+<circle cx="214" cy="72" r="20" class="f5 glow"/><circle cx="214" cy="72" r="13" class="f5"/></svg></div>
+          <div class="lang-body">
+          <div class="lang-top"><h3>Arduino</h3><span class="tag t3">Medio</span></div>
+          <p class="for"><b>Para:</b> conectar el código con el mundo real: luces, sensores, robots.</p>
+          <p>Lo que vimos en el taller. Puedes practicar sin comprar nada con un simulador en línea.</p>
+          <div class="actions"><a class="btn primary" href="https://www.youtube.com/playlist?list=PLF-qcfymUY4W3NrcHpmm5ersLcLYIOic3" target="_blank" rel="noopener">▶ Curso de Arduino desde cero · 45 videos</a><a class="btn" href="https://www.tinkercad.com/" target="_blank" rel="noopener">Simular Arduino (Tinkercad)</a></div>
+          </div>
+        </div>
+
+    <h3 class="list-title">Lenguajes avanzados</h3>
+    <p class="sub">Cuando ya manejes bien la lógica y JavaScript, estos son los siguientes pasos. Mi recomendación de orden: <b>Java</b> primero y <b>Python</b> después.</p>
+    <div class="adv adv-note">
+    <div class="lang side">
+          <div class="lang-art" aria-hidden="true"><svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg"><ellipse cx="108" cy="116" rx="54" ry="9" class="t"/>
+<path d="M64 52 H146 V84 a28 28 0 0 1 -28 28 H92 a28 28 0 0 1 -28 -28 Z" class="f3"/>
+<path d="M146 62 h12 a16 16 0 0 1 0 32 h-14" class="st3"/>
+<path d="M86 42 c-8 -8 8 -12 0 -22" class="st1"/><path d="M108 42 c-8 -8 8 -12 0 -22" class="st1"/><path d="M130 42 c-8 -8 8 -12 0 -22" class="st1"/>
+<text x="105" y="91" text-anchor="middle" class="mono big p">{ }</text></svg></div>
+          <div class="lang-body">
+          <div class="lang-top"><h3>Java</h3><span class="tag t3">Avanzado</span></div>
+          <p class="for"><b>Para:</b> aplicaciones, sistemas grandes y apps para Android.</p>
+          <p>Es estricto y ordenado: te obliga a declarar bien tus datos y a organizar el código. Eso te forma buenos hábitos desde el principio.</p>
+          <div class="actions"><a class="btn primary" href="https://www.youtube.com/watch?v=JOAqpdM36wI" target="_blank" rel="noopener">▶ Curso de Java desde cero · MoureDev, unas 8 h 50 min</a></div>
+          </div>
+        </div>
+    <div class="lang side">
+          <div class="lang-art" aria-hidden="true"><svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg"><text x="14" y="62" class="mono dim">0110</text><text x="14" y="84" class="mono dim">1011</text><text x="186" y="62" class="mono dim">1001</text><text x="186" y="84" class="mono dim">0101</text>
+<rect x="76" y="34" width="88" height="72" rx="10" class="f1"/><rect x="88" y="46" width="64" height="48" rx="6" class="p"/>
+<text x="120" y="78" text-anchor="middle" class="big c1t">C++</text>
+<g class="f4"><rect x="88" y="22" width="6" height="12"/><rect x="102" y="22" width="6" height="12"/><rect x="116" y="22" width="6" height="12"/><rect x="130" y="22" width="6" height="12"/><rect x="144" y="22" width="6" height="12"/>
+<rect x="88" y="106" width="6" height="12"/><rect x="102" y="106" width="6" height="12"/><rect x="116" y="106" width="6" height="12"/><rect x="130" y="106" width="6" height="12"/><rect x="144" y="106" width="6" height="12"/>
+<rect x="64" y="50" width="12" height="6"/><rect x="64" y="64" width="12" height="6"/><rect x="64" y="78" width="12" height="6"/><rect x="64" y="92" width="12" height="6"/>
+<rect x="164" y="50" width="12" height="6"/><rect x="164" y="64" width="12" height="6"/><rect x="164" y="78" width="12" height="6"/><rect x="164" y="92" width="12" height="6"/></g></svg></div>
+          <div class="lang-body">
+          <div class="lang-top"><h3>C++</h3><span class="tag t3">Avanzado</span></div>
+          <p class="for"><b>Para:</b> videojuegos, programas muy rápidos y electrónica.</p>
+          <p>Es la base de lo que escribes en Arduino. Te enseña cómo trabaja la computadora por dentro, y por eso es más exigente.</p>
+          <div class="actions"><a class="btn primary" href="https://www.youtube.com/watch?v=jS6wb263CIM" target="_blank" rel="noopener">▶ Curso de C++ desde cero · Sinergia, unas 9 h 30 min</a></div>
+          </div>
+        </div>
+    <div class="lang side later">
+          <div class="lang-art" aria-hidden="true"><svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="16" width="180" height="108" rx="12" fill="#1b212d"/>
+<circle cx="46" cy="30" r="4" fill="#ff7a7a"/><circle cx="59" cy="30" r="4" fill="#ffd166"/><circle cx="72" cy="30" r="4" fill="#4cd7a6"/>
+<text x="44" y="64" class="mono term" fill="#86a2ff">&gt;&gt;&gt;</text><text x="76" y="64" class="mono term" fill="#e1e5ef">print("¡Hola!")</text>
+<text x="44" y="88" class="mono term" fill="#5fcf9b">¡Hola!</text>
+<text x="44" y="112" class="mono term" fill="#86a2ff">&gt;&gt;&gt;</text><rect x="76" y="101" width="8" height="14" fill="#e1e5ef"/></svg></div>
+          <div class="lang-body">
+          <div class="lang-top"><h3>Python</h3><span class="tag t4">Después de Java</span></div>
+          <p>Muy popular para ciencia de datos, automatización e inteligencia artificial. Su sintaxis es sencilla, y por eso conviene aprenderlo con una base sólida: si empiezas por aquí, es fácil adquirir hábitos que luego cuestan trabajo en lenguajes más estrictos como Java.</p>
+          <div class="actions"><a class="btn" href="https://www.youtube.com/watch?v=Kp4Mvapo5kc" target="_blank" rel="noopener">▶ Curso de Python · MoureDev, más de 10 h</a></div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- 4. PRACTICA SIN INSTALAR -->
+  <section id="practica">
+    <header class="sec-head">
+      <p class="eyebrow">Sin instalar nada</p>
+      <h2>Practica desde el navegador</h2>
+      <p class="sub">Puedes escribir y probar código hoy mismo, sin descargar programas.</p>
+    </header>
+    <div class="tools">
+      <a class="tool feature" href="https://www.mycompiler.io/" target="_blank" rel="noopener">
+        <span class="tool-top"><b>MyCompiler</b><span class="go">mycompiler.io ↗</span></span>
+        <small>Escribe y ejecuta código en casi cualquier lenguaje, sin instalar nada. Sirve para programas que muestran su resultado como texto en la consola (no para gráficos ni páginas web).</small>
+      </a>
+      <a class="tool" href="https://scratch.mit.edu/" target="_blank" rel="noopener">
+        <span class="tool-top"><b>Scratch</b><span class="go">↗</span></span>
+        <small>Programa con bloques, directo en el navegador.</small>
+      </a>
+      <a class="tool" href="https://www.tinkercad.com/" target="_blank" rel="noopener">
+        <span class="tool-top"><b>Tinkercad</b><span class="go">↗</span></span>
+        <small>Simula circuitos con Arduino sin comprar nada.</small>
+      </a>
+    </div>
+  </section>
+
+  <!-- 5. HERRAMIENTAS -->
+  <section id="herramientas">
+    <header class="sec-head">
+      <p class="eyebrow">Cuando quieras ir más lejos</p>
+      <h2>Herramientas y lecturas</h2>
+    </header>
+    <div class="tools">
+      <a class="tool" href="https://code.visualstudio.com/" target="_blank" rel="noopener">
+        <span class="tool-top"><b>Visual Studio Code</b><span class="go">↗</span></span>
+        <small>Editor de código gratuito para HTML, JavaScript y más.</small>
+      </a>
+      <a class="tool" href="https://www.arduino.cc/en/software" target="_blank" rel="noopener">
+        <span class="tool-top"><b>Arduino IDE</b><span class="go">↗</span></span>
+        <small>El programa para escribir código para tu placa Arduino.</small>
+      </a>
+      <a class="tool" href="https://code.org/" target="_blank" rel="noopener">
+        <span class="tool-top"><b>Code.org</b><span class="go">↗</span></span>
+        <small>Cursos y actividades para aprender a programar.</small>
+      </a>
+      <a class="tool" href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">
+        <span class="tool-top"><b>MDN en español</b><span class="go">↗</span></span>
+        <small>Documentación de HTML, CSS y JavaScript.</small>
+      </a>
+    </div>
+  </section>
+
+  <!-- 6. CONSEJOS -->
+  <section id="consejos">
+    <header class="sec-head"><h2>Tres consejos finales</h2></header>
+    <ul class="tips">
+      <li><b>Equivocarte es parte del proceso.</b> Todos los programadores ven errores todos los días.</li>
+      <li><b>Haz proyectos pequeños.</b> Terminar algo chico enseña más que empezar algo gigante.</li>
+      <li><b>Practica fuera de clase.</b> Lo que haces por tu cuenta es lo que más te hace avanzar.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Preparado por <b>Tu nombre aquí</b> para la charla de tecnología.</p>
+    <p class="small">Los videos y sitios pertenecen a sus autores. Esta página solo reúne enlaces.</p>
+  </div>
+</footer>
+
+<script>
+  /* Botón de tema: alterna claro/oscuro y recuerda la elección */
+  (function () {
+    var root = document.documentElement, btn = document.getElementById('theme-btn');
+    function actual() {
+      var t = root.getAttribute('data-theme');
+      if (t) return t;
+      return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    function pintar() { btn.textContent = actual() === 'dark' ? '☀️' : '🌙'; }
+    btn.addEventListener('click', function () {
+      var nuevo = actual() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', nuevo);
+      try { localStorage.setItem('tema', nuevo); } catch (e) {}
+      pintar();
+    });
+    pintar();
+  })();
+</script>
+<script>
+  /* Menú desplegable (pantallas pequeñas) */
+  (function () {
+    var nav = document.getElementById('menu'), btn = document.getElementById('menu-btn');
+    function cerrar() { nav.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); btn.textContent = '☰'; btn.setAttribute('aria-label', 'Abrir menú'); }
+    function abrir()  { nav.classList.add('open');    btn.setAttribute('aria-expanded', 'true');  btn.textContent = '✕'; btn.setAttribute('aria-label', 'Cerrar menú'); }
+    btn.addEventListener('click', function (e) { e.stopPropagation(); nav.classList.contains('open') ? cerrar() : abrir(); });
+    nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') cerrar(); });
+    document.addEventListener('click', function (e) { if (!nav.contains(e.target)) cerrar(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar(); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 880) cerrar(); });
+  })();
+</script>
+</body>
+</html>
